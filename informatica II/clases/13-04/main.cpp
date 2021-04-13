@@ -3,6 +3,7 @@
 #include "Mapa.hh"
 #include "Vehiculo.hh"
 #include "Jeep.hh"
+#include "Pantanera.hh"
 
 int main(int argc, char** argv) {
 
@@ -31,7 +32,7 @@ int main(int argc, char** argv) {
     }
 
     Mapa mapa(terreno, largo, alto);
-    Jeep vehiculo(mapa, 0, 0);
+    Pantanera vehiculo(mapa, 0, 0);
 
     vehiculo.imprimir();
 
