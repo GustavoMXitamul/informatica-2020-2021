@@ -57,6 +57,16 @@ void Vehiculo::imprimir() {
             if(i == _posX && j == _posY) {
                 std::cout << "X";
             }
+            else if (_mapa[i][j]==Terreno::Agua)
+            {
+                std::cout <<'~';
+            }
+
+            else if (_mapa[i][j]== Terreno::Calle)
+            {
+                std::cout << '-';
+            }
+            
             else {
                 std::cout << _mapa[i][j];
             }
